@@ -1,3 +1,14 @@
+.logo {
+    width: 100px; /* Adjust size as needed */
+    margin-bottom: 1rem;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -10,13 +21,20 @@ body {
 
 .login-container {
     background: #444654;
-    padding: 2rem;
+    padding: 5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(65, 65, 65, 0.1);
     text-align: center;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,7 +50,7 @@ label {
     display: block;
     text-align: left;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 input {
@@ -46,16 +64,41 @@ input {
     align-items: center;
 }
 
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem; /* Space below the password input */
+    width: 100%; /* Matches input field width */
+    font-size: 0.8rem; /* Smaller font size */
+    color: white;
+    justify-content: flex-start; /* Aligns checkbox and label to the left */
+}
+
+.remember-me input {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+.remember-me label {
+    text-align: left;
+}
+
+
+
+
 button {
-    width: 100%;
-    padding: 10px;
+    width:auto; /* Adjust to fit the content */
+    padding:10px 20px; /* Give it a nice padding */
     margin-top: 1.5rem;
     background-color: #64919f;
     border: none;
     color: white;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure it's a block-level element */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {

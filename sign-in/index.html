@@ -6,6 +6,9 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
 </head>
+</div>
+<div class="logo-container">
+    <img src="logo-UTD-3.png" alt="Logo" class="logo">
 <body>
     <div class="container">
         <div class="login-container">
@@ -16,7 +19,12 @@
                 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password">
-                
+
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+
                 <button type="submit">Sign In</button>
             </form>
         </div>
